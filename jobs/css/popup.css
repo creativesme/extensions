@@ -1,0 +1,35 @@
+body {
+	height: auto;
+    width: 320px;
+	text-align: center;
+}
+.startScrapping p {
+	font-size: 15px;
+	line-height: 20px;
+}
+button {
+    outline: none;
+    cursor: pointer;
+    padding: 10px 30px;
+    border-radius: 4px;
+    border: none;
+    background: #2a487d;
+    color: #fff;
+    text-transform: capitalize;
+    width: 90%;
+}
+button:last-child {
+    margin-top: 7px;
+}
+button:hover {
+    background: #4267b2;
+}
+.spinner {
+	background-image: url(../images/loading.gif);
+	width: 80px;
+	height: 80px;
+	margin: 0px auto auto;
+	display: none;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}

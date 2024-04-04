@@ -1,0 +1,22 @@
+ {
+    "name": "Wine Shop Scrapping",
+    "description" : "Scrap data of wine shops",
+    "version": "1.0",
+    "manifest_version": 2,
+    "permissions": ["activeTab", "declarativeContent", "storage","tabs","notifications","http://*/","https://*/"],
+    "background": {
+      "scripts": ["scripts/background.js"],
+      "persistent": false
+    },
+    "content_scripts": [{ 
+      // "css": [ "bootstrap.min.css" ],
+      "matches": ["https://*/*","https://*.wine-searcher.com/*"],
+      "js":["js/jquery.min.js","scripts/content.js"],
+      "run_at": "document_start"
+    }],
+    "page_action": {
+      "default_popup": "popup.html",
+      "default_icon": "images/hello_extensions.png"
+    }
+  }
+      
